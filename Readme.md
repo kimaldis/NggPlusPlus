@@ -1,14 +1,6 @@
-Ngg++ (Beta!!)
+NggPlusPlus
 ====
 Publish to Nextgen plugin for Lightroom by Kim Aldis.
-
-## Public Beta
-
-Ngg++  is pre-release (beta) software distributed for feedback and testing and as such may produce unpredictable results. Usual beta software warnings apply, please be careful.
-
-This public beta expires end March 2018
-
-Please send feedback. You can contact me using this site's contact form or add comments below.
 
 ### Known Issues
 
