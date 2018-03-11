@@ -8,6 +8,7 @@ Summary information for plug-in.
 -- plugin name, though, is NggPlusPluss
 local sPluginName2 = 'NggPlusplus++'		-- can change this
 local sPluginName = 'Lr2NggPublisher'		-- cannot change this without unpleasant consequences
+
 return {
 	
 	LrSdkVersion = 6.0,
