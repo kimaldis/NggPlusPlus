@@ -3,7 +3,6 @@
 // ToDo: put a date/time header on the first call for this session.
 //
 
-
 class Logger {
 
 	static $ClearLog = false;

@@ -5,7 +5,7 @@ local LrFunctionContext = import 'LrFunctionContext'
 local LrColor = import 'LrColor'
 
 dialogs = {}
-
+ 
 -- Global login settings. Updated by the observer set up in startDialogs
 
 function dialogs.sectionsForTopOfDialog( f, propertyTable )
