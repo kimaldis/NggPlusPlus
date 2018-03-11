@@ -43,6 +43,5 @@ The Wordpress plugin has no settings.
 The wordpress plugin logs to __Log.log in the plugin's root folder
 The Lightroom plugin logs NgPlusPlus_Log in ~/Documents folder in Mac OS, My Documents folder in Windows.
 
-
 ## 3rd Parties
 Thanks to Jeffrey Friedl for his JSON encode/decode code. http://regex.info/blog/lua/json
