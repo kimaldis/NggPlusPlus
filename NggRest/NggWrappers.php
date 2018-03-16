@@ -193,6 +193,12 @@ class ka_ngg_Image { // class:
 				   
 				$image->destroy();
 				return true;
+			} else {
+				// image can't be found. Doesn't need deleting. Return true anyway so 
+				// Lightroom can get on with its business.
+				// ToDo: This needs some kind of warning so Lightroom can be warned.
+				Logger::Log( "ka_ngg_Image::Delete( $pid ): image doesn't exist in db. Ignoring");
+
 			}
 		} catch( Exception $e ) {
 			Logger::Log( "ka_ngg::Delete($pid) Faild: "  . $e->GetMessage() );
