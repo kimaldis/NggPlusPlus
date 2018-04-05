@@ -109,10 +109,14 @@ function publishServiceProvider.deletePhotosFromPublishedCollection( publishSett
 
 		Log( string.format( "Deleting id: %d", photoId ));
 		local result = Post( "image/delete",  { pid = photoId }, publishSettings )
-
-		if result ~= nil then
+		
+		-- call the delete callback even if it fails on the Wordpress end
+		-- ToDo: Need to fix it so REST doesn't return an error if the delete fails
+		--			there's still a potential conflict here if the image is out of
+		--			kilter between the server and the local.
+		--if result ~= nil then
 			deletedCallback( photoId )
-		end
+		--end
 
 	end
 end

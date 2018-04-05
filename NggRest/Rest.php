@@ -382,7 +382,11 @@ class ka_ngg_Rest{ // class:
 		if ( ka_ngg_Image::Delete( $pid ) ) {
 			$this->Return( "OK From DeleteImage" );
 		} else {
-			$this->Error( "Couldn't Delete Image $pid" );
+			// warning if remote image can't be deleted.
+			// probably because it didn't exist at the other end
+			// No error because we want the local image registered deleted.
+			//$this->Error( "Couldn't Delete Image $pid" );
+			$this->Warn( "Couldn't Delete Image $pid" );
 		}
 	}
 	private function tmpdir() { //fn:
